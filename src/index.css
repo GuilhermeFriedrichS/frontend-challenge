@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 18 50% 6%;         /* #140D0A */
+    --foreground: 36 33% 94%;        /* #F5F1EB */
+
+    --card: 16 33% 11%;              /* #241612 */
+    --card-foreground: 36 33% 94%;   /* #F5F1EB */
+    --card-border: 16 37% 18%;       /* #3D251C */
+
+    --popover: 16 33% 11%;
+    --popover-foreground: 36 33% 94%;
+
+    --primary: 29 76% 62%;           /* #E89B55 */
+    --primary-foreground: 18 50% 6%;
+    --primary-hover: 28 59% 56%;     /* #D28A4C */
+
+    --secondary: 16 25% 15%;         /* #2F1D15 */
+    --secondary-foreground: 36 33% 94%;
+
+    --muted: 35 41% 68%;             /* #CFB28C */
+    --muted-foreground: 32 20% 50%;
+
+    --accent: 14 83% 65%;            /* #F0805F */
+    --accent-foreground: 18 50% 6%;
+
+    --destructive: 14 83% 65%;
+    --destructive-foreground: 36 33% 94%;
+
+    --border: 16 37% 18%;            /* #3D251C */
+    --input: 16 37% 18%;
+    --ring: 29 76% 62%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-mono;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #140D0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2F1D15;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E89B55;
+}
+
+/* Shimmer animation utility for skeletons */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(232, 155, 85, 0.08) 20%,
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2s infinite;
+  content: '';
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer::after {
+    animation: none;
+  }
+}

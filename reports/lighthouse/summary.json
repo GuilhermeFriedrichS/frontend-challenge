@@ -1,0 +1,58 @@
+{
+  "env": {
+    "date": "2026-10-24T20:41:40.301Z",
+    "node": "v23.3.0",
+    "lighthouse": "13.5.0",
+    "chrome": "156.0.0.0",
+    "os": "Windows_NT 10.0.19045 (x64)",
+    "cpu": "AMD Ryzen 5 5500                               ",
+    "baseUrl": "http://localhost:4173",
+    "runsPerTarget": 1
+  },
+  "results": [
+    {
+      "label": "Início (Desktop)",
+      "runs": 1,
+      "performance": 97,
+      "accessibility": 92,
+      "bestPractices": 96,
+      "seo": 92,
+      "lcp": "1.12 s",
+      "cls": "0.002",
+      "tbt": "0 ms"
+    },
+    {
+      "label": "Início (Mobile)",
+      "runs": 1,
+      "performance": 82,
+      "accessibility": 92,
+      "bestPractices": 96,
+      "seo": 92,
+      "lcp": "3.74 s",
+      "cls": "0.000",
+      "tbt": "65 ms"
+    },
+    {
+      "label": "Detalhe do NFT (Desktop)",
+      "runs": 1,
+      "performance": 76,
+      "accessibility": 91,
+      "bestPractices": 96,
+      "seo": 92,
+      "lcp": "0.92 s",
+      "cls": "0.611",
+      "tbt": "0 ms"
+    },
+    {
+      "label": "Detalhe do NFT (Mobile)",
+      "runs": 1,
+      "performance": 64,
+      "accessibility": 87,
+      "bestPractices": 96,
+      "seo": 92,
+      "lcp": "3.69 s",
+      "cls": "0.424",
+      "tbt": "48 ms"
+    }
+  ]
+}
