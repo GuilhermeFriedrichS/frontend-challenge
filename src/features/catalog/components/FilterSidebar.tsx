@@ -274,7 +274,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
       {/* 3. Rede */}
       <div className="space-y-3 pt-2">
         <h3 className="font-bold text-sm text-[#F5F1EB]">Rede</h3>
-        <ul className="space-y-2">
+        <ul className="pl-4 space-y-2">
           {NETWORKS.map(net => (
             <li key={net.name}>
               <button
