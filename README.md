@@ -1,5 +1,11 @@
 # Guia da Solução — Instruções de Execução e Avaliação
 
+## 🌐 Links da Entrega
+* **Aplicação em Produção (Vercel)**: [https://frontend-challenge-rho-bice.vercel.app](https://frontend-challenge-rho-bice.vercel.app)
+* **Repositório GitHub**: [https://github.com/GuilhermeFriedrichS/frontend-challenge](https://github.com/GuilhermeFriedrichS/frontend-challenge)
+
+---
+
 ### 1. Requisitos de Ambiente
 * **Node.js**: v20+ ou v22+
 * **npm**: v10+
@@ -35,6 +41,7 @@ npm run dev
 
 O projeto já inclui as configurações completas de roteamento SPA (`vercel.json` e `public/_redirects`), garantindo que refresh e links diretos para qualquer rota (`/cart`, `/checkout`, `/nft/:id`, `/profile`, `/wallets`) funcionem com HTTP 200:
 
+* **URL Pública Publicada**: [https://frontend-challenge-rho-bice.vercel.app](https://frontend-challenge-rho-bice.vercel.app)
 * **Vercel**:
   1. Conecte o repositório ou execute `npx vercel`
   2. Framework Preset: **Vite**
